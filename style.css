@@ -1,0 +1,261 @@
+::-webkit-scrollbar{
+    display: none;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+a:hover{
+    color: #8fd452;
+}
+ul{
+    list-style: none;
+}
+.active{
+    color: #8fd452;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar{
+    position: fixed;
+    background-color:white;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+    box-shadow: 0px 0px 150px 0px  rgba(10, 5, 5, 0.411);
+    z-index: 9;
+}.nav-links{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.logo
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header img
+{
+    min-width: 100%;
+    max-height: 350px;
+    
+}
+.home
+{
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: whitesmoke;
+    padding-bottom: 20px;
+}
+
+
+.home-content
+{   min-width: 100%;
+    position: static;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#heading
+{   position: absolute;
+    width:570px;
+    padding: 35px;
+    background-color:white;
+    margin: auto;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
+    font-weight: 900;
+    font-size: 40px;
+    box-shadow: 1px 4px 9px 4px rgba(10, 5, 5, 0.411);
+}
+.home-text 
+{   
+   max-width: 90%;
+   min-height: 70%;
+   margin-top: 70px;
+   line-height: 25px;
+}
+
+.home-text p
+{
+    word-wrap: break-word
+}
+
+
+/* Gallery */
+.gallery
+{
+    min-height: 100vh;
+    padding-top: 75px;
+    background-color: lightskyblue;
+    min-width: 90%;
+}
+
+.gallery-heading
+{   display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+    min-height: 60px;
+    background-color: #8fd452;
+    border-radius: 50px;
+    box-shadow: 1px 5px 10px 5px slategrey;
+    margin-bottom: 10px;
+}
+.gallery-heading .selector
+{
+    
+    font-weight: bolder;
+}
+.gallery-heading a:hover
+{
+    color: cornsilk
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column  {
+    flex-wrap: 33.33%;
+    margin: auto;
+    max-width: 400px;
+    padding: 30px; 
+  }
+
+
+/* Expo */
+
+.expo
+{
+    background-color: whitesmoke;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#expo-title
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    font-size: 30px;
+    font-weight: 600
+}
+
+
+/* Contact */
+.Contact
+{
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 70%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+/* Moibile device */
+  
+@media screen and (max-width:850px) 
+{
+      
+    .menu-btn{
+        display: block;
+    }
+ 
+    .navbar{
+        padding: 0;
+        position: relative;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: white;
+    }
+    .nav-links{
+        
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #8fd452;
+        margin-top: -900px;
+        transition: all 1s ease;
+    }
+    .nav-links li{
+            margin: 30px auto;
+        }   
+    .nav-links a
+    {
+        color: whitesmoke;
+    }
+    
+    .mobile-menu{
+        margin-top: 0px;
+        border-radius:10% ;
+        
+    }
+
+    header img
+    {
+        max-width: 90%;
+        height: max-content;
+    }
+    #heading
+    {
+        max-width: 80%;
+        height: max-content;
+    }
+}
