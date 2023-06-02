@@ -132,7 +132,7 @@ header img
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    max-width: 80%;
+    max-width: 35%;
     min-height: 60px;
     background-color: #8fd452;
     border-radius: 50px;
@@ -161,28 +161,6 @@ header img
     padding: 30px; 
   }
 
-
-/* Expo */
-
-.expo
-{
-    background-color: whitesmoke;
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-}
-#expo-title
-{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    margin: -50px 0 0 -50px;
-    font-size: 30px;
-    font-weight: 600
-}
 
 
 /* Contact */
@@ -257,5 +235,11 @@ header img
     {
         max-width: 80%;
         height: max-content;
+    }
+
+    /* Gallery */
+    .gallery-heading
+    {
+        max-width: 75%;
     }
 }
