@@ -132,7 +132,7 @@ header img
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    max-width: 80%;
+    max-width: 35%;
     min-height: 60px;
     background-color: #8fd452;
     border-radius: 50px;
@@ -151,10 +151,12 @@ header img
 
 .row {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
   
   .column  {
+    align-items: center;
     flex-wrap: 33.33%;
     margin: auto;
     max-width: 400px;
@@ -255,7 +257,11 @@ header img
     }
     #heading
     {
-        max-width: 80%;
-        height: max-content;
+        display: none;
+    }
+
+    .gallery-heading
+    {
+        max-width: 70%;
     }
 }
